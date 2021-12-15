@@ -202,13 +202,16 @@ label #sidebar_btn:hover{
   margin-left: 20px;
   font-size: 14px;
   opacity: 0.8;
+  width: 26.3%;
   height: 100%;
+  float: left;
+ 
 }
 
-.content .poster {
-  width: 33.33%;
-  float:left;
-  margin: 10px;
+.content .bg-poster {
+  width: 89%;
+  height: 50%;
+ 
 }
 
 /* Responsive CSS */
@@ -299,85 +302,7 @@ label #sidebar_btn:hover{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-section{
-  padding: 20px 100px;
-} */
 
-.section-home{
-  position: relative;
-  min-height: 100vh;
-  background: url(bg.jpg)no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
- 
-.section-home:before{
-  content: '';
-  position: absolute;
-  background: linear-gradient(to top, #23252B, transparent);
-  width: 100%;
-  height: 80px;
-  bottom: 0;
-} */
-
- .section-home h1{
-  color: #fff;
-  font-size: 10vw;
-  font-weight: 800;
-  text-shadow: 0 5px 25px rgb(0 0 0 / 20%);
-  opacity: 0.3;
-} */
-
- .section-two{
-  min-height: 100vh;
-  background: #23252B;
-} */
-
- .section-two h2{
-  color: #fff;
-  font-size: 3em;
-  font-weight: 700;
-  margin: 30px 0;
-} */
-
- .section-two p{
-  color: #fff;
-  font-size: 1em;
-  margin: 30px 0;
-}
-
-
-/* 
-header .logo{
-  color: #fff;
-  font-size: 1.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-} */
-
-/* header .navigation{
-  position: relative;
-  line-height: 75px;
-  transition: 0.6s;
-  transition-property: line-height;
-} */
-
-/* header.sticky .navigation{
-  line-height: 60px;
-}
-
-/* header .navigation .menu{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  user-select: none;
-} */ 
 
 .menu {
   list-style-type: none;
@@ -478,7 +403,7 @@ header.sticky .menu-item .sub-menu{
   display: none;
 }
 
-@media (max-width: 1060px){
+/* @media (max-width: 1060px){
   header .navigation .menu{
     position: fixed;
     display: block;
@@ -492,7 +417,7 @@ header.sticky .menu-item .sub-menu{
     overflow-y: auto;
     transition: 0.5s;
     transition-property: right, visibility;
-  }
+  } */
 
   header.sticky .navigation{
     line-height: 75px;
@@ -592,4 +517,4 @@ header.sticky .menu-item .sub-menu{
   header.sticky{
     padding: 10px 20px;
   }
-}
+
