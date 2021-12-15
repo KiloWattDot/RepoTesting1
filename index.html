@@ -10,121 +10,314 @@
     
   </head>
   <body>
-
+<!--  Sidebar Collapse Check -->
     <input type="checkbox" id="check">
 
     <header>
       
+      <!-- Hamburger menu icon -->
       <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
+        <i class="fas fa-bars NAV_BTN" id="sidebar_btn"></i>
       </label>
+      <!-- Page Title -->
       <div class="left_area">
         <h3>GUARDIANS OF THE <span>CODE</span></h3>
       </div>
-      <!-- <div class="right_area">
-        <a href="#" class="logout_btn">Logout</a>
-      </div> -->
+  
     </header>
-    
+  
+    <!-- Mobile sidebar/stacked menu Start -->
     <div class="mobile_nav">
       <div class="nav_bar">
-        
+          
+
         <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
-        <a href="#" class="sub-btn"><i class="fas far fa-eye fa-angle-down"></i><span>Viewing Style</span> <i class="fas fa-angle-down"></i></a>
-        <a href="#"><i class="fas fa-mask"></i><span>Characters</span><i class="fas fa-angle-down"></i></a>
-        <a href="#"><i class="fas fa-clock"></i><span>Max Duration</span><i class="fas fa-angle-down"></i></a>
-        <!-- <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
-        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
+        
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="sub-btn"><i class="fas far fa-eye "></i><span>Viewing Style</span>   <i class="fas fa-angle-down"></i></a>
+            <!-- View Style Check boxes -->
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="Chronological" value="Chronological">
+                    <label for="Chronological"> Chronological Order</label>
+                </a>
+              </li>
+  
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="Release" value="Release">
+                    <label for="Release"> Date of Release</label>
+                </a>
+              </li>
+  
+            </ul>
+          </li>
+        </ul>   
+        <ul class="menu"> 
+          <li class="menu-item">
+            <a href="#"  class="sub-btn"><i class="fas fa-mask"></i><span>Characters</span> <i class="fas fa-angle-down"></i></a>
+            <!-- Characters -->
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="blackPanther" value="blackPanther">
+                    <label for="blackPanther">Black Panther</label>
+                </a>
+              </li>
+  
+              <li class="sub-item"><a href="#">
+                <input type="checkbox" id="rocketRaccoon" value="rocketRaccoon">
+                <label for="rocketRaccoon">Rocket Raccoon</label>
+              </a>
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="blackWidow" value="blackWidow">
+                    <label for="blackWidow"> Black Widow</label>
+                </a>
+              </li>
+  
+              <li class="sub-item"><a href="#">
+                <input type="checkbox" id="doctorStrange" value="doctorStrange">
+                <label for="doctorStrange">Doctor Strange</label>
+              </a>
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="stanLee" value="stanLee">
+                    <label for="stanLee"> Stan Lee</label>
+                </a>
+              </li>
+  
+              <li class="sub-item"><a href="#">
+                <input type="checkbox" id="spiderMan" value="spiderMan">
+                <label for="spiderMan"> Spider-Man</label>
+              </a>
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="captainAmerica" value="captainAmerica">
+                    <label for="captainAmerica">Captain America</label>
+                </a>
+              </li>
+  
+              <li class="sub-item"><a href="#">
+                <input type="checkbox"id="loki" value="loki"><label for="loki">
+                <label for="loki"> Loki</label>
+              </a>
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox"id="thor" value="thor">
+                    <label for="Thor"> Thor</label>
+                </a>
+              </li>
+  
+              <li class="sub-item"><a href="#">
+                <input type="checkbox" id="ironMan" value="ironMan">
+                <label for="ironMan">Iron Man</label>
+              </a>
+  
+            </ul>
+          </li>
+        </ul>
+        <ul class="menu"> 
+          <li class="menu-item">
+            <a href="#" class="sub-btn" ><i class="fas fa-clock"></i><span>Max Duration</span> <i class="fas fa-angle-down"></i></a>
+            <!-- Max Duration -->
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="twohours" value="twohours">
+                    <label for="twohours">  2 hours.</label>
+                </a>
+              </li>
+  
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="twohours20min" value="twohours20min">
+                    <label for="twohours20min"> 2 hours and 20 min.</label>
+                </a>
+              </li>
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox"  id="twohours40min" value="twohours40min">
+                    <label for="twohours40min">  2 hours and 40 min.</label>
+                </a>
+              </li>
+  
+              <li class="sub-item">
+                <a href="#">
+                  <input type="checkbox" id="threeHours" value="threeHours">
+                    <label for="threeHours">  3 hours.</label>
+                </a>
+              </li>
+  
+            </ul>
+          </li>
+        </ul>
+  
+  
       </div>
     </div>
-    <!--mobile navigation bar end-->
-    <!--sidebar start-->
-    <div class="sidebar">
+    <!--Mobile sidebar/stacked menu end-->
+
+
+<!-- Desktop sidebar Menu start-->
+    <div class="sidebar ">
       <div class="profile_info">
-      
+        <!-- Search box -->
         <form id="search-form" role="search" class="d-flex align-items-center mb-3">
           <input type="search" class="form-control" id="search-input" placeholder="Search">
+          <!-- Search submit btn -->
           <button type="submit" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
         </form>
-        
       </div>
-      <br><br>
-      <!-- Menu items -->
+
+
+      <!-- Desktop sidebar Menu items -->
       <ul class="menu">
         <li class="menu-item">
           <a href="#" class="sub-btn"><i class="fas far fa-eye "></i><span>Viewing Style</span>   <i class="fas fa-angle-down"></i></a>
           <!-- View Style Check boxes -->
           <ul class="sub-menu">
-            <li class="sub-item"><a href="#">Sub Item 01</a></li>
-            <li class="sub-item"><a href="#">Sub Item 02</a></li>
-            <li class="sub-item"><a href="#">Sub Item 03</a></li>
-            <li class="sub-item"><a href="#">Sub Item 04</a></li>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="Chronological" value="Chronological">
+                  <label for="Chronological"> Chronological Order</label>
+              </a>
+            </li>
+
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="Release" value="Release">
+                  <label for="Release"> Date of Release</label>
+              </a>
+            </li>
 
           </ul>
         </li>
-      </ul>
-        
-        
-        
-
-
+      </ul>   
+    
       <ul class="menu"> 
         <li class="menu-item">
           <a href="#"  class="sub-btn"><i class="fas fa-mask"></i><span>Characters</span> <i class="fas fa-angle-down"></i></a>
+          <!-- Characters -->
           <ul class="sub-menu">
-            <li class="sub-item"><a href="#">Sub Item 01</a></li>
-            <li class="sub-item"><a href="#">Sub Item 02</a></li>
-            <li class="sub-item"><a href="#">Sub Item 03</a></li>
-            <li class="sub-item"><a href="#">Sub Item 04</a></li>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="blackPanther" value="blackPanther">
+                  <label for="blackPanther">Black Panther</label>
+              </a>
+            </li>
+
+            <li class="sub-item"><a href="#">
+              <input type="checkbox" id="rocketRaccoon" value="rocketRaccoon">
+              <label for="rocketRaccoon">Rocket Raccoon</label>
+            </a>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="blackWidow" value="blackWidow">
+                  <label for="blackWidow"> Black Widow</label>
+              </a>
+            </li>
+
+            <li class="sub-item"><a href="#">
+              <input type="checkbox" id="doctorStrange" value="doctorStrange">
+              <label for="doctorStrange">Doctor Strange</label>
+            </a>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="stanLee" value="stanLee">
+                  <label for="stanLee"> Stan Lee</label>
+              </a>
+            </li>
+
+            <li class="sub-item"><a href="#">
+              <input type="checkbox" id="spiderMan" value="spiderMan">
+              <label for="spiderMan"> Spider-Man</label>
+            </a>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="captainAmerica" value="captainAmerica">
+                  <label for="captainAmerica">Captain America</label>
+              </a>
+            </li>
+
+            <li class="sub-item"><a href="#">
+              <input type="checkbox"id="loki" value="loki"><label for="loki">
+              <label for="loki"> Loki</label>
+            </a>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox"id="thor" value="thor">
+                  <label for="Thor"> Thor</label>
+              </a>
+            </li>
+
+            <li class="sub-item"><a href="#">
+              <input type="checkbox" id="ironMan" value="ironMan">
+              <label for="ironMan">Iron Man</label>
+            </a>
 
           </ul>
         </li>
       </ul>
-
 
       <ul class="menu"> 
         <li class="menu-item">
           <a href="#" class="sub-btn" ><i class="fas fa-clock"></i><span>Max Duration</span> <i class="fas fa-angle-down"></i></a>
+          <!-- Max Duration -->
           <ul class="sub-menu">
             <li class="sub-item">
               <a href="#">
-                <label>
-                  <input type="checkbox" >
-                  Chronological Order
-                
-                </label>
+                <input type="checkbox" id="twohours" value="twohours">
+                  <label for="twohours">  2 hours.</label>
               </a>
             </li>
-            <li class="sub-item"><a href="#">Sub Item 02</a></li>
-            <li class="sub-item"><a href="#">Sub Item 03</a></li>
-            <li class="sub-item"><a href="#">Sub Item 04</a></li>
+
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="twohours20min" value="twohours20min">
+                  <label for="twohours20min"> 2 hours and 20 min.</label>
+              </a>
+            </li>
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox"  id="twohours40min" value="twohours40min">
+                  <label for="twohours40min">  2 hours and 40 min.</label>
+              </a>
+            </li>
+
+            <li class="sub-item">
+              <a href="#">
+                <input type="checkbox" id="threeHours" value="threeHours">
+                  <label for="threeHours">  3 hours.</label>
+              </a>
+            </li>
 
           </ul>
         </li>
       </ul>
 
-      <!-- <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
-      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a> -->
     </div>
+<!-- Desktop sidebar Menu End -->
 
+  <!-- CONTENT AREA -->
     <div class="content ">
-      <div class="card ">
+      <div class="card poster">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
-      <div class="card">
+      <div class="card poster">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <div class="card poster">
+        <p>HI Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </div>
     </div>
 
 
-
+<!-- SCRIPTS -->
     <script type="text/javascript">
       
       $(document).ready(function(){
